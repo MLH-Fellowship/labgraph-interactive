@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Labgraph Interactive</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="gradientCont">
+      <nav class="header">
+        <img src="./media/logo.png" alt="" class="logo" />
+      </nav>
+      <div class="mainCont">
+        <h2>Labraph 📉</h2>
+        <h3>
+          Prototype real-time neuroscience and psychology experiments 👩‍⚕️. Use
+          the terminal to get started 👇
+        </h3>
+        <div class="terminalCont">
+          <div id="terminalReslutsCont">
+            <img src="./media/simple_viz.gif" alt="" id="image1" />
+            <img src="./media/simple_viz_k_feat.gif" alt="" id="image2" />
+            <img src="./media/simple_viz_one_feat.gif" alt="" id="image3" />
+          </div>
+          <form>
+            <input
+              id="terminalTextInput"
+              type="text"
+              placeholder="Try typing hi or help..."
+              autocomplete="off"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
