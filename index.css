@@ -1,0 +1,241 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  height: 70px;
+  background-color: #023e8a;
+  display: flex;
+  box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0000001a;
+  padding: 10px 30px;
+}
+.logo {
+  width: 50px;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  /*displays system font*/
+  /*font: caption;*/
+}
+
+.gradientCont {
+  /* background-image: linear-gradient(-270deg, #0085ff 0%, #00fbff 100%); */
+  opacity: 1;
+  background: #caf0f8;
+  width: 100%;
+  height: 400px;
+}
+
+.mainCont {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.mainCont h2 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  font-weight: 350;
+  font-size: 48px;
+  margin: 30px 0 0 0;
+  color: #03045e;
+  opacity: 0;
+
+  animation: fadeInAnimation 1s ease-in-out 0s forwards;
+}
+
+.mainCont h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #3c3c4a8a;
+  margin: 0 0 30px 0;
+  opacity: 0;
+
+  animation: fadeInAnimation 1s ease-in-out 0.5s forwards;
+}
+
+.terminalCont {
+  background: black;
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 0 0 0;
+  margin-top: -20px;
+  font-family: "Roboto Mono", monospace;
+  opacity: 0;
+
+  animation: slideDownAnimation 1s ease-in-out 1s forwards,
+    fadeInAnimation 0.8s ease-in-out 1s forwards;
+}
+
+.userEnteredText {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#terminalReslutsCont {
+  width: 100%;
+  height: 400px;
+  padding: 12px;
+  overflow-y: auto;
+  resize: none;
+  border: none;
+  font-size: 14px;
+  line-height: 28px;
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#image1,
+#image2,
+#image3 {
+  width: 450px;
+  display: none;
+}
+#terminalReslutsCont a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+#terminalReslutsCont a:hover {
+  text-decoration: underline;
+}
+
+#terminalTextInput {
+  background: black;
+  display: block;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 4px 4px;
+  width: 100%;
+  color: white;
+  padding: 18px;
+  font-size: 14px;
+  outline: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.footerCont {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out 2s forwards;
+}
+
+.footerCont a {
+  color: #037aff;
+  text-decoration: none;
+}
+
+/*
+  Animation habibi
+  Thanks @joericho for the help with this
+*/
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDownAnimation {
+  0% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@-moz-keyframes slideDownAnimation {
+  0% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@-o-keyframes slideDownAnimation {
+  0% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes slideDownAnimation {
+  0% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* Make me responsive */
+@media screen and (max-width: 1000px) {
+  .gradientCont {
+    height: 220px;
+  }
+  .mainCont {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .mainCont h2 {
+    font-size: 32px;
+    margin: 40px 0 0 0;
+  }
+  .mainCont h3 {
+    font-size: 16px;
+    margin: 0 0 40px 0;
+  }
+  #terminalReslutsCont {
+    height: 100px;
+  }
+}
