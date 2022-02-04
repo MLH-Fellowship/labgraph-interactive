@@ -42,14 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var postHelpList = function () {
     // Array of all the help keywords
     var helpKeyWords = [
-      "- python brain_waves.py",
-      "- python population.py",
-      "- python water_levels.py",
-      "- Github",
-      "- 'Time' will display the current time.",
-      "- 'Date' will display the current date.",
-      "- 'cat videos' will make you even happier",
-      "* There are more keywords that you have to discover by yourself.",
+      "- 'python simulation.py 1000' will run the simulation with 1000 features",
+      "- 'python simulation.py 100' will run the simulation with 100 features",
+      "- 'python simulation.py 1' will run the simulation with 1 feature",
+      "- 'github' will redirect you to LabGraph",
+      "- 'time' will display the current time",
+      "- 'date' will display the current date",
+      "- 'cat videos' will make you happy",
+      "* there are more keywords that you have to discover by yourself",
     ].join("<br>");
     addTextToResults(helpKeyWords);
   };
@@ -99,19 +99,19 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (textInputValueLowerCase) {
       // funny replies [START]
 
-      case "python population.py":
+      case "python simulation.py 100":
         clearInput();
         img1.style.display = "initial";
         img2.style.display = "none";
         img3.style.display = "none";
         break;
-      case "python brain_waves.py":
+      case "python simulation.py 1000":
         clearInput();
         img2.style.display = "initial";
         img1.style.display = "none";
         img3.style.display = "none";
         break;
-      case "python water_levels.py":
+      case "python simulation.py 1":
         clearInput();
         img3.style.display = "initial";
         img1.style.display = "none";
