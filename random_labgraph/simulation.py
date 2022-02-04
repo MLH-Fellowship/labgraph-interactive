@@ -10,9 +10,14 @@ import matplotlib.axes
 import matplotlib.pyplot as plt
 import numpy as np
 
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("NUM_FEATURES", help="The number of features used for the graph")
+args = parser.parse_args()
+
 # Constants used by nodes
 SAMPLE_RATE = 10.0
-NUM_FEATURES = 100
+NUM_FEATURES = int(args.NUM_FEATURES)
 WINDOW = 2.0
 REFRESH_RATE = 2.0
 
