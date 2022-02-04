@@ -2,6 +2,8 @@
 
 # LabGraph Interactive
 
+Learning LabGraph online.
+
 ## What is LabGraph?
 
 **LabGraph** is a a **Python-first framework used to build sophisticated research systems** with *real-time streaming*, *graph API*, and *parallelism*. Facebook Researchers use it prototype wearable hardware systems and process digital signals under their [**VR/AR efforts into the Metaverse**](https://tech.fb.com/ar-vr/).
@@ -27,7 +29,9 @@ To run LabGraph simulations on your machine, follow steps listed below:
 
 1. Run `pip install labgraph` to install LabGraph along with its dependecieis
 2. Run `python setup.py install` to work with the simulation we prepared and listed under `random_labgraph/simulation.py`
-3. Run `python random_labgraph simulation.py` to get a graph produced with LabGraph's node in real-time
+3. Run `python random_labgraph/simulation.py 100` to get a graph produced with LabGraph's node in real-time
+
+![](https://raw.githubusercontent.com/MLH-Fellowship/labgraph-interactive/main/docs/media/simple_viz.gif)
 
 ## License
 
