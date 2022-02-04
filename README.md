@@ -1,3 +1,5 @@
+![labgraph-interactive](https://socialify.git.ci/MLH-Fellowship/labgraph-interactive/image?description=1&descriptionEditable=Discover%20LabGraph%20with%20us!&font=Rokkitt&issues=1&logo=https%3A%2F%2Fimages.emojiterra.com%2Fgoogle%2Fandroid-11%2F512px%2F1f4c9.png&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+
 # LabGraph Interactive
 
 ## What is LabGraph?
@@ -12,7 +14,20 @@ As MLH Fellows who have not used LabGraph before, **we had a hard time understan
 
 We built the interactive tool to let users get the taste of LabGraph with zero commitments. The interactive terminal lets the users run simulations we prepared with **different numbers of features** and **see their expected outputs**.
 
+## How to Use LabGraph Interactive?
+
+1. Navigate to the website hosted on GitHub Pages at [**mlh-fellowship.github.io/labgraph-interactive**](https://mlh-fellowship.github.io/labgraph-interactive/)
+2. Type `help` into the terminal
+3. Run the commands you would like to try out
+4. Check the resulted graph built with random data
+
 ## How to Use LabGraph?
+
+To run LabGraph simulations on your machine, follow steps listed below:
+
+1. Run `pip install labgraph` to install LabGraph along with its dependecieis
+2. Run `python setup.py install` to work with the simulation we prepared and listed under `random_labgraph/simulation.py`
+3. Run `python random_labgraph simulation.py` to get a graph produced with LabGraph's node in real-time
 
 ## License
 
