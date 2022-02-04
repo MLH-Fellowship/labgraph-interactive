@@ -89,3 +89,8 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
+
+random_labgraph/__pycache__
+*pyc
+*~
+\#*\#
