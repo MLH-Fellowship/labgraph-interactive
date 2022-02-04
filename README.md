@@ -2,9 +2,15 @@
 
 ## What is LabGraph?
 
-**LabGraph** is a a Python-first framework used to build real-time research systems with *real-time streaming*, *graph API*, and *parallelism*. Facebook Researchers use it prototype wearable hardware systems and process digital signals under their [**VR/AR efforts**](https://tech.fb.com/ar-vr/) into the Metaverse. To put it simply, LabGraph sets the relationship between the inputs and outputs of computations and provides the needed tooling to run them in parallel and help developers focus on algorithms instead of the environment.
+**LabGraph** is a a **Python-first framework used to build sophisticated research systems** with *real-time streaming*, *graph API*, and *parallelism*. Facebook Researchers use it prototype wearable hardware systems and process digital signals under their [**VR/AR efforts into the Metaverse**](https://tech.fb.com/ar-vr/).
 
-## Why We Built LabGraph Interactive?
+To put it simply, LabGraph sets the relationship between the inputs and outputs of computations and provides the needed tooling to run them in parallel to help developers focus on algorithms instead of the environment.
+
+## What is LabGraph Interactive?
+
+As MLH Fellows who have not used LabGraph before, **we had a hard time understanding its purpose, how to set it up correctly, and what to expect from the library**. So we decided to help future MLH Fellows **get up to speed both on concepts and usage** with an interactive tool.
+
+We built the interactive tool to let users get the taste of LabGraph with zero commitments. The interactive terminal lets the users run simulations we prepared with **different numbers of features** and **see their expected outputs**.
 
 ## How to Use LabGraph?
 
